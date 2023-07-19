@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Арсений Седельников](https://up.htmlacademy.ru/htmlcss-individual/1/user/2325475).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Рахманов](https://htmlacademy.ru/profile/flander).
 
 ---
 
