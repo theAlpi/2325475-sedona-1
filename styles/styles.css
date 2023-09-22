@@ -24,7 +24,7 @@ body {
   background-color: white;
 }
 
-/* Шапка */
+/* Header */
 
 header{
   color:black;
@@ -39,4 +39,25 @@ header{
   text-align: center;
   color:black;
   background: white;
+  text-transform: capitalize;
+}
+
+/* Main */
+
+.main-index {
+  color:black;
+  background-color: white;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* Advantages */
+
+.advantages-list {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 }
