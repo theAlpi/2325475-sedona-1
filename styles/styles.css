@@ -1,3 +1,5 @@
+/* Шрифты */
+
 @font-face{
   font-family: "PT Sans";
   font-weight: 400;
@@ -12,11 +14,17 @@
   src: url("../fonts/ptsans-700.woff2") format(".woff2");
   font-display: swap;
 }
-.main-index {
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-}
+
+/*Сайт*/
 
 body {
   background-color: tomato;
+  font-size: 16px;
+  line-height: 24px;
+  color:white;
+}
+
+.main-index {
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
 }
