@@ -20,15 +20,15 @@
 body {
   font-size: 18px;
   line-height: 21px;
-  color:black;
+  color:#000000;
   background-color: white;
 }
 
 /* Header */
 
 header{
-  color:black;
-  background: white;
+  color:#000000;
+  background: #FFFFFF;
 }
 
 .nav{
@@ -37,23 +37,33 @@ header{
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color:black;
-  background: white;
+  color:#000000;
+  background: #FFFFFF;
   text-transform: capitalize;
 }
 
 /* Main */
 
 .main-index {
-  color:black;
-  background-color: white;
+  color:#000000;
+  background-color: #FFFFFF;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 /* Advantages */
+/* Colored box */
+.blue {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+.light-blue {
+  background-color: #83B3D333;
+  color: #000000;
+}
 
+/* List */
 .advantages-list {
   font-weight: 700;
   font-size: 24px;
