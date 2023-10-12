@@ -14,7 +14,18 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  width: 1280px;
+  min-height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -23,6 +34,30 @@ body {
 }
 
 /* Шапка */
+.navigation {
+  margin: 0 auto;
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logo-site {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 892px;
+  height: 64px;
+  margin-left: 168px;
+}
 
 .nav-list {
   font-weight: 700;
@@ -31,13 +66,42 @@ body {
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
+.nav-list-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  padding: 20px 16px;
+  display: block;
+}
 /* Основное */
 .main-index {
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
+  flex-grow: 1;
+}
+
+.hero {
+  background-image: url("../images/hero/curtain.svg"), url("../images/index-background.jpg");
+  background-color: #688fa9;
+  background-position: bottom, center;
   background-repeat: no-repeat;
+  background-size: contain, cover;
+  height: 485px;
+  padding: 51px 0 82px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages-block {
@@ -45,6 +109,32 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  padding: 69px 270px;
+  margin-bottom: 21px;
+}
+
+.advantages-text {
+  margin: 0;
+  padding: 112px 84px;
+  text-align: center;
+  height: 385px
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+  margin: 0;
+  padding: 112px 84px;
+  text-align: center;
+  height: 385px;
+  box-sizing: content-box;
+}
+
+.pictures {
+  color: #ffffff;
+  background-color: #82b3d3;
+  display: flex;
+  padding: 0;
 }
 
 .head-main {
@@ -79,30 +169,57 @@ body {
 
 /* Преимущества */
 .advantages-list {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .description {
-  text-transform: capitalize;
-}
-
-/* Подписка */
-.header-block {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
 }
 
 .description-block {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
+  margin: 0;
 }
+
+.description-color {
+  color: #333333;
+}
+
+.advantages-img {
+  display: block;
+  object-fit: cover;
+  background-color: #82b3d3;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 30px;
+}
+/* Подписка */
+.header-block {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 /* Подвал */
 
 /* Телефон */
@@ -119,6 +236,7 @@ color: inherit;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
+
 .light-blue {
   background-color: #83B3D333;
 }
