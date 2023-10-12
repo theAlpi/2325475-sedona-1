@@ -3,14 +3,14 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/ptsans-400.woff2") format(".woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/ptsans-700.woff2") format(".woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -19,30 +19,21 @@ body {
   line-height: 21px;
   color:#000000;
   background-color: #FFFFFF;
-
 }
-/* index */
+
 /* Шапка */
-.main-header{
-  color:#000000;
-  background: #FFFFFF;
-}
 
-.nav-list{
+.nav-list {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color:#000000;
-  background: #FFFFFF;
   text-transform: capitalize;
   text-decoration: none;
 }
 
 /* Основное */
 .main-index {
-  color:#000000;
-  background-color: #FFFFFF;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
