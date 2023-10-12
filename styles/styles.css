@@ -15,6 +15,7 @@
 }
 
 body {
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color:#000000;
@@ -47,23 +48,17 @@ body {
 }
 
 .head-main {
-  font-weight: 400;
-  font-size: 18px;
   line-height: 23px;
-  text-align: left;
 }
 
 .nav-link-head {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
 }
 
 .head-leg {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
 }
 .search-hotel-number {
   font-weight: 700;
@@ -73,22 +68,18 @@ body {
 
 /* Карточки */
 .product-card {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
 }
 
 .product-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: left;
 }
 
 .price {
   text-align: right;
 }
+
 /* Преимущества */
 .advantages-list {
   font-weight: 700;
@@ -99,9 +90,6 @@ body {
 }
 
 .description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-transform: capitalize;
 }
 
@@ -114,7 +102,6 @@ body {
 }
 
 .description-block {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -123,8 +110,6 @@ body {
 
 /* Телефон */
 .number-num {
-font-family: "PT Sans", sans-serif;
-font-weight: 400;
 font-size: 40px;
 line-height: 40px;
 text-align: center;
@@ -139,12 +124,11 @@ color:#000000;
 }
 .light-blue {
   background-color: #83B3D333;
-  color: #000000;
 }
 
 /* Невидимые фрагменты */
 .visually-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 /* Кнопки */
