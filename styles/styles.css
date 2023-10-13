@@ -95,7 +95,6 @@ body {
   background-position: bottom, center;
   background-repeat: no-repeat;
   background-size: contain, cover;
-  height: 485px;
   padding: 51px 0 82px;
 }
 
@@ -117,7 +116,6 @@ body {
   margin: 0;
   padding: 112px 84px;
   text-align: center;
-  height: 385px
 }
 
 .advantages-item {
@@ -126,7 +124,6 @@ body {
   margin: 0;
   padding: 112px 84px;
   text-align: center;
-  height: 385px;
   box-sizing: content-box;
 }
 
