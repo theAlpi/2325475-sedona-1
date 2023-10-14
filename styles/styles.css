@@ -283,15 +283,64 @@ body {
 .subscribe .description-block {
   margin-bottom: 54px;
 }
-/* Подвал */
 
-/* Телефон */
+/* Подвал */
+.main-footer {
+  width: 1200px;
+  height: 120px;
+  padding: 40px 0 30px 0;
+}
+.social-container {
+  align-items: center;
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.social {       /* Иконки */
+  display: flex;
+  width: 142px;
+  height: 40px;
+  align-items: center;
+  flex-shrink: 0;
+  list-style-type: none;
+}
+
+.social-link {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.footer-contact-number {   /* Номер */
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 720px;
+  padding: 0 194px;
+}
+
 .number-num {
-font-size: 40px;
-line-height: 40px;
-text-align: center;
-text-decoration: none;
-color: inherit;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-number {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /* Цветные боксы */
