@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  width: 1280px;
+  width: 1200px;
   min-height: 100%;
   margin: 0 auto;
   flex-direction: column;
@@ -90,7 +90,7 @@ body {
 }
 
 .hero {
-  background-image: url("../images/hero/curtain.svg"), url("../images/index-background.jpg");
+  background-image: url("../images/curtain.svg"), url("../images/index-background.jpg");
   background-color: #688fa9;
   background-position: bottom, center;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ body {
 
 .advantages-text {
   margin: 0;
-  padding: 112px 84px;
+  padding: 103px 85px;
   text-align: center;
 }
 
@@ -125,6 +125,7 @@ body {
   padding: 112px 84px;
   text-align: center;
   box-sizing: content-box;
+  flex: 1;
 }
 
 .pictures {
@@ -197,14 +198,14 @@ body {
   background-color: #82b3d3;
 }
 
-.header {
+.advantages-heading {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   padding-bottom: 30px;
 }
 /* Подписка */
