@@ -261,6 +261,28 @@ body {
   text-align: center;
 }
 
+.subscribe-field {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 20px;
+  width: 452px;
+  max-height: 52px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe .description-block {
+  margin-bottom: 54px;
+}
 /* Подвал */
 
 /* Телефон */
@@ -310,6 +332,22 @@ color: inherit;
   color: #ffffff;
   display: block;
   max-width: 375px;
-  min-height: 52px;
   margin: 54px auto 0;
+}
+
+.subscribe-button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  max-width: 375px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #82b3d3;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
 }
