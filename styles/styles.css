@@ -245,10 +245,21 @@ body {
 
 /* Заинтересовались */
 .interested {
-
+  padding: 96px 304px;
+  text-align: center;
 }
 
 /* Подписка */
+.subscribe {
+  background-color: #82b3d3;
+  background-image: url("../images/subscribe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 96px 258px 104px;
+  text-align: center;
+}
 
 /* Подвал */
 
@@ -287,6 +298,18 @@ color: inherit;
 
 /* Кнопки */
 .button-brown {
-  background-color: #756157;
-  color: #FFFFFF;
+  text-align: center;
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 49px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  max-width: 375px;
+  min-height: 52px;
+  margin: 54px auto 0;
 }
