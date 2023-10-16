@@ -256,13 +256,16 @@ body {
 }
 
 /* Подписка */
-.subscribe {
+.sub-img {
   background-color: #82b3d3;
   background-image: url("../images/subscribe.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #ffffff;
+}
+
+.subscribe {
   padding: 96px 258px 104px;
   text-align: center;
 }
@@ -288,6 +291,66 @@ body {
 
 .subscribe .description-block {
   margin-bottom: 54px;
+}
+
+/*Пагинация*/
+.pagination-block {
+  margin-bottom: 61px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination-item {
+  min-width: 60px;
+  text-align: center;
+}
+
+.pagination-link-current {
+  background-color: #f2f2f2;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: block;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.pagination-link {
+  text-decoration: none;
+  background: #82b3d3;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  display: block;
+  padding: 12px 10px;
+}
+
+.pagination-link-next {
+  background-color: transparent;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: block;
+  padding: 12px 10px;
+  text-align: center;
 }
 
 /* Подвал */
