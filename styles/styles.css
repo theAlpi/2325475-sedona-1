@@ -52,7 +52,6 @@ body {
 .nav {
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 892px;
   height: 64px;
   margin-left: 168px;
 }
@@ -65,11 +64,19 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   margin: 0;
-  padding: 0;
-  width: 400px;
+  padding: 20px 0 0;
   align-items: center;
   display: flex;
   list-style-type: none;
+}
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-user {
+  text-decoration: none;
+  justify-content: flex-end;
 }
 
 .nav-list-link {
@@ -367,11 +374,11 @@ body {
 }
 
 /* Кнопки */
-.button-brown {
+.button-search {
   text-align: center;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 49px;
+  padding: 8px 50px;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -380,6 +387,21 @@ body {
   color: #ffffff;
   display: block;
   max-width: 375px;
+  margin: 54px auto 0;
+}
+
+.button-desired {
+  text-align: center;
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
   margin: 54px auto 0;
 }
 

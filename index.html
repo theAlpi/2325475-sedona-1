@@ -14,23 +14,25 @@
       </a>
       <nav class="nav">
         <ul class="nav-list">
-          <li><a class="nav-list-link">главная</a></li>
-          <li><a class="nav-list-link" href="#">О Седоне</a></li>
-          <li><a class="nav-list-link" href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item"><a class="nav-list-link">главная</a></li>
+          <li class="navigation-item"><a class="nav-list-link" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="nav-list-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 
-        <ul class="nav-list">
-          <li><a class="nav-list-link search-icon" href="#">
-              <span class="visually-hidden">Поиск</span></a>
+        <ul class="nav-list navigation-user">
+          <li class="navigation-item"><a class="nav-list-link search-icon" href="#">
+            <a clas="navigation-link-user search-icon" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
-          <li>
-            <a class="nav-list-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link-user" href="#">
               <span class="visually-hidden favourite-icon">Избранное</span>
               <span class="favourite-number">12</span>
             </a>
           </li>
-          <li>
-            <button class="button button-brown" type="button">Хочу сюда</button>
+          <li class="navigation-item">
+            <button class="button-desired" type="button">Хочу сюда</button>
           </li>
         </ul>
       </nav>
@@ -109,7 +111,7 @@
         <h2 class="header-block">Заинтересовались?</h2>
         <p class="description-block">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <a class="button button-brown" href="#">Поиск гостиницы в Седоне</a>
+        <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribe">
