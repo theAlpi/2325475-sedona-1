@@ -405,17 +405,213 @@ body {
 }
 
 /* Вывод поиска */
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
 
+.inner-search {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.found-hotel {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  max-width: 350px;
+}
+
+.select-control {
+  font-family: inherit;
+  width: 292px;
+  min-height: 49px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 12px 19px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #ffffff;
+  appearance: none;
+  background-image: url("../images/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  padding-right: 40px;
+  margin-left: auto;
+}
+
+.display-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  max-width: 160px;
+  min-height: 48px;
+  margin-left: 70px;
+}
+
+.display-button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.current-button {
+  border: 2px solid #000000;
+  background-image: url("../images/icon/table.svg");
+}
+
+.view-item {
+  background-image: url("../images/icon/item.svg");
+}
+
+.view-list {
+  background-image: url("../images/icon/list.svg");
+}
 
 /* Карточки */
-.product-card-title {
+.product {
+  margin-bottom: 79px;
+  position: relative;
+}
+
+.product-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+}
+
+.product-item {
+  width: 340px;
+  min-height: 438px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr;
+}
+
+.product-card-link {
+  text-decoration: none;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
+  display: block;
+  grid-column: 1 / -1;
 }
 
-.price {
+.product-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   text-align: right;
+}
+
+.product-link-details {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 18px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+}
+
+.product-button {
+  font-family: inherit;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #82b3d3;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 140px;
+  min-height: 36px;
+}
+
+.catalog-hotel-stars {
+  background-image: url("../images/icon/star.svg");
+  background-repeat: space no-repeat;
+  background-size: 18px 17px;
+  background-position: center;
+  margin: 0;
+}
+
+.one-stars {
+  width: 35px;
+}
+
+.two-stars {
+  width: 42px;
+}
+
+.tree-stars {
+  width: 66px;
+}
+
+.four-stars {
+  width: 89px;
+}
+
+.five-stars {
+  width: 105px;
+}
+
+.catalog-hotel-raiting {
+  margin: 0;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
 }
 
 /* Заинтересовались */
