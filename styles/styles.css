@@ -90,6 +90,42 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link-user {
+  text-decoration: none;
+  position: relative;
+  min-height: 64px;
+  width: 44px;
+  height: 64px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-icon {
+  background-image: url("../images/icon/search.svg");
+  display: block;
+}
+
+.favourite-icon {
+  background-image: url("../images/icon/heart.svg");
+  display: block;
+  margin-right: 20px;
+}
+
+.favourite-number {
+  position: absolute;
+  left: 20px;
+  top: 11px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+  max-width: 50px;
+}
+
 /* Основное */
 .main-index {
   flex-grow: 1;
