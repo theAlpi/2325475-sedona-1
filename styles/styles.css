@@ -569,6 +569,18 @@ body {
   grid-area: favorites;
 }
 
+.product-button-favorite {
+  color: #fff;
+  background-color: #7DB54F;
+  border-radius: 4px;
+  border: 0;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  grid-area: favorites;
+}
+
 .catalog-hotel-stars {
   background-image: url("../images/icon/star.svg");
   background-repeat: space no-repeat;
