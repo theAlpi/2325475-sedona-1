@@ -218,9 +218,18 @@ body {
 
 .service-item {
   width: 400px;
+  height: 385px;
+  text-align: center;
+  flex: 1;
+}
+
+.service-block {
   text-align: center;
   padding: 80px 85px;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .service-heading {
@@ -230,7 +239,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   position: relative;
-  margin-bottom: 30px;
 }
 
 .description {
@@ -244,6 +252,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .description-color {
@@ -774,30 +784,26 @@ body {
   height: 120px;
   padding: 40px 0 30px 0;
 }
+
 .social-container {
   align-items: center;
-  width: 1060px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: nowrap;
 }
 
-.social {       /* Иконки */
+/* Иконки */
+.social-list {
+  margin: 0;
+  padding: 0 0 0 48px;
   display: flex;
-  width: 142px;
-  height: 40px;
-  align-items: center;
-  flex-shrink: 0;
+  justify-content: center;
   list-style-type: none;
 }
 
-.social-link {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  flex-wrap: nowrap;
+.social-list img {
+  width: 47px;
+  height: 40px;
 }
 
 .footer-contact-number {   /* Номер */
@@ -805,7 +811,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 720px;
+  width: 331px;
   padding: 0 194px;
 }
 
@@ -825,6 +831,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+/*Логотип html academy*/
+.footer-contact-logo {
+  padding: 0 47px 0 0;
 }
 
 /* Цветные боксы */
@@ -865,6 +876,7 @@ body {
   color: #ffffff;
   display: block;
   margin: 54px auto 0;
+  width: 276px;
 }
 
 .button-desired {
