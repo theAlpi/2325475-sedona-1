@@ -181,6 +181,7 @@ body {
 }
 
 .advantages-block-welcome {
+  margin-top: 3px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -367,26 +368,29 @@ body {
 
 .catalog-navigation-item {
   position: relative;
-  padding-right: 10px;
-  margin-right: 18px;
   height: 21px;
 }
 
 .catalog-navigation-link-home {
   background-image: url("../images/icon/home.svg");
-  width: 12px;
+  width: 15px;
   background-repeat: no-repeat;
-  background-size: 15px 15px;
+  background-size: 13px 13px;
   background-position: center;
   display: block;
-  padding: 11px 1px;
+  padding-bottom: 19px;
 }
 
 .catalog-navigation-link {
+  background-image: url("../images/icon/arrowright.svg");
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position: right 106px center;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   display: block;
+  padding: 0 26px;
 }
 
 .catalog-filter {
@@ -397,13 +401,13 @@ body {
 
 .catalog-filter-checkbox {
   border: none;
-  margin: 0 70px 0 0;
+  margin: 0 71px 0 0;
   padding: 0;
 }
 
 .catalog-filter-radio {
   border: none;
-  margin: 0 189px 0 0;
+  margin: 0 151px 0 0;
   padding: 0;
 }
 
@@ -422,6 +426,7 @@ body {
 
 .catalog-filter-item {
   margin-bottom: 16px;
+  height: 23px;
 }
 
 .catalog-filter-title {
@@ -436,17 +441,45 @@ body {
 .filter-input {
   font-size: 18px;
   line-height: 23px;
+  width: 20px;
+  height: 20px;
 }
 
-.filter-mark {
+.catalog-checked {
   background-image: url(../images/icon/checkboxlike.svg);
-  background-size: 100%;
+  background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left 0 center;
 }
 
-.catalog-filter-label {
-  position: relative;
+.catalog-check {
+  background-image: url(../images/icon/checkbox.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left 0 center;
+}
+
+.catalog-radios {
+  background-image: url(../images/icon/radiolike.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left 0 center;
+}
+
+.catalog-radio {
+  background-image: url(../images/icon/radio.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: left 0 center;
+}
+
+.filter-label {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  margin-left: 36px;
 }
 
 .catalog-inputs {
@@ -535,7 +568,7 @@ body {
 }
 
 .catalog-buttons {
-  margin: 0 0 0 30px;
+  margin: 0 0 0 31px;
   padding: 0;
   width: 191px;
   height: 104px;
@@ -632,7 +665,7 @@ body {
   margin-top: 16px;
   display: grid;
   grid-template-columns: 140px auto;
-  gap: 16px 16px;
+  gap: 16px 20px;
   grid-template-areas:
     "title        title"
     "description  price"
@@ -677,7 +710,7 @@ body {
 
 .product-price {
   margin: 0;
-  margin-right: 4px;
+  margin-right: 1px;
   justify-self: end;
 }
 
@@ -709,7 +742,6 @@ body {
   text-transform: uppercase;
   grid-area: favorites;
   width: 140px;
-  margin-left: 2px;
 }
 
 .product-button-favorite {
@@ -726,7 +758,6 @@ body {
   text-transform: uppercase;
   grid-area: favorites;
   width: 140px;
-  margin-left: 2px;
 }
 
 .catalog-hotel-stars {
@@ -763,7 +794,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
-  padding: 8px 26px;
+  padding: 8px 22.5px;
   border-radius: 4px;
   grid-area: rating;
   margin: 0;
