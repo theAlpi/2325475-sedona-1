@@ -84,6 +84,18 @@ body {
   background: #756257;
 }
 
+.current-link-catalog::after {
+  position: absolute;
+  content: "";
+  width: 93px;
+  top: 43px;
+  left: 16px;
+  right: 16px;
+  bottom: -1px;
+  height: 2px;
+  background: #756257;
+}
+
 .navigation-item {
   position: relative;
 }
@@ -329,9 +341,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  min-height: 412px;
-  padding: 35px 70px 0;
-  margin-bottom: 50px;
+  padding: 35px 70px 70px;
 }
 
 .catalog-title {
@@ -351,6 +361,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .catalog-navigation-item {
