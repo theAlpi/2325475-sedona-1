@@ -342,6 +342,7 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 35px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .catalog-title {
@@ -391,6 +392,7 @@ body {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  height: 160px;
 }
 
 .catalog-filter-checkbox {
@@ -579,7 +581,7 @@ body {
   appearance: none;
   background-image: url("../images/icon/arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 18px center;
+  background-position: right 13px center;
   padding-right: 20px;
   margin-left: auto;
 }
@@ -626,9 +628,10 @@ body {
 }
 
 .card-container {
+  width: 300px;
   margin-top: 16px;
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 140px auto;
   gap: 16px 16px;
   grid-template-areas:
     "title        title"
@@ -674,6 +677,7 @@ body {
 
 .product-price {
   margin: 0;
+  margin-right: 4px;
   justify-self: end;
 }
 
@@ -692,6 +696,9 @@ body {
 }
 
 .product-button {
+  font-family: PT Sans;
+  font-weight: 700;
+  text-decoration: none;
   color: #fff;
   background-color: #82B3D3;
   border-radius: 4px;
@@ -701,9 +708,14 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   grid-area: favorites;
+  width: 140px;
+  margin-left: 2px;
 }
 
 .product-button-favorite {
+  font-family: PT Sans;
+  font-weight: 700;
+  text-decoration: none;
   color: #fff;
   background-color: #7DB54F;
   border-radius: 4px;
@@ -713,6 +725,8 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   grid-area: favorites;
+  width: 140px;
+  margin-left: 2px;
 }
 
 .catalog-hotel-stars {
@@ -749,10 +763,11 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
-  padding: 9px 22px 8px 23px;
+  padding: 8px 26px;
   border-radius: 4px;
   grid-area: rating;
   margin: 0;
+  width: 95px;
 }
 
 /* Заинтересовались */
