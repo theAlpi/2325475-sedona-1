@@ -174,6 +174,80 @@
        </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="date-table" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="date-wrapper">
+              <label class="field-name" for="in-date">Дата Заезда: </label>
+              <input class="calendar" type="text" id="in-date" name="date-in" placeholder="Укажите дату" value="27 апреля 2020" required>
+              <p class="date-info attention">Мы не можем отправить вас в прошлое.</p>
+            </div>
+
+            <div class="date-wrapper">
+              <label class="field-name" for="out-date">Дата Выезда:</label>
+              <input class="calendar" type="text" id="out-date" name="date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+              <p class="date-info">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+
+            <div class="number-wrapper">
+              <div class="visitors">
+                <label class="field-name" for="add-adults">Взрослые:</label>
+                <div class="button-wrapper">
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                    <svg class="less" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="currenColor"  d="M3 9v2h14V9H3Z" />
+                    </svg>
+                  </button>
+                  <input class="people-number" type="number" id="add-adults" name="adults" value="2" required>
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых.</span>
+                    <svg class="more" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="currenColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="visitors">
+              <span class="form-label">
+                  <label class="field-name" for="add-kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="button-tooltip" type="button" aria-labelledby="tooltip-label-date">
+                      <span class="visually-hidden">Посмотреть подсказку.</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="button-wrapper">
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей.</span>
+                    <svg class="less" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="currenColor" d="M3 9v2h14V9H3Z" />
+                    </svg>
+                  </button>
+                  <input class="people-number" type="number" id="add-kids" name="kids" value="2">
+                  <button class="add-button" type="button">
+                    <span class="visually-hidden">Увеличить количество детей.</span>
+                    <svg class="more" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                      <path fill="currenColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
