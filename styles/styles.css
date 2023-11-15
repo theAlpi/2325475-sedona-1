@@ -75,19 +75,6 @@ body {
 .current-link::after {
   position: absolute;
   content: "";
-  width: 68px;
-  top: 43px;
-  left: 16px;
-  right: 16px;
-  bottom: -1px;
-  height: 2px;
-  background: #756257;
-}
-
-.current-link-catalog::after {
-  position: absolute;
-  content: "";
-  width: 93px;
   top: 43px;
   left: 16px;
   right: 16px;
@@ -202,7 +189,7 @@ body {
   padding: 112px 84px;
   text-align: center;
   box-sizing: content-box;
-  flex: 1;
+  flex: flex;
 }
 
 .pictures {
@@ -332,12 +319,12 @@ body {
 }
 
 .advantages-text .advantages-heading::after {
-  background-color: #FFFFFF4D ;
+  background-color: #FFFFFF4D;
 }
 
 /* Фильтр каталога */
 .head-main {
-  background-color: #82b3d3;;
+  background-color: #82b3d3;
   background-image: url("../images/filtr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -379,6 +366,19 @@ body {
   background-position: center;
   display: block;
   padding-bottom: 19px;
+}
+
+.catalog-navigation-link-home:hover,
+.catalog-navigation-link-home:focus {
+  opacity: 60%;
+}
+
+.catalog-navigation-link-home:active {
+  opacity: 30%;
+}
+
+.catalog-navigation-link-home:disabled {
+  opacity: 10%;
 }
 
 .catalog-navigation-link {
@@ -511,6 +511,11 @@ body {
   cursor: pointer;
 }
 
+.range-toggle:not(:disabled):active {
+  outline: 3px solid #83B3D3;
+  border-radius: 5px;
+}
+
 .toggle-min {
   left: 0;
   top: -8px;
@@ -619,6 +624,20 @@ body {
   margin-left: auto;
 }
 
+.select-control:hover {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:focus {
+  outline: none;
+  border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .display-list {
   list-style-type: none;
   padding: 0;
@@ -639,6 +658,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
+}
+
+.display-button:hover {
+  border: 2px solid #000000;
+}
+
+.display-button:focus-visible {
+  border: 2px solid #68a2ca;
+}
+
+.display-button:active {
+  border: 2px solid #000000;
 }
 
 .current-button {
@@ -728,6 +759,19 @@ body {
   grid-area: btn-more;
 }
 
+.product-link-details:hover,
+.product-link-details:focus {
+  background-color: #615048;
+}
+
+.product-link-details:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-link-details:disabled {
+  background-color: #e5e5e5;
+}
+
 .product-button {
   font-family: PT Sans;
   font-weight: 700;
@@ -744,6 +788,19 @@ body {
   width: 140px;
 }
 
+.product-button:hover,
+.product-button:focus {
+  background-color: #68a2ca;
+}
+
+.product-button:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-button:disabled {
+  background-color: #e5e5e5;
+}
+
 .product-button-favorite {
   font-family: PT Sans;
   font-weight: 700;
@@ -758,6 +815,15 @@ body {
   text-transform: uppercase;
   grid-area: favorites;
   width: 140px;
+}
+
+.product-button-favorite:hover,
+.product-button-favorite:focus {
+  background-color: #6c9e42;
+}
+
+.product-button-favorite:disabled {
+  background-color: #e5e5e5;
 }
 
 .catalog-hotel-stars {
@@ -898,6 +964,15 @@ body {
   padding: 12px 10px;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-link-next {
   background-color: transparent;
   color: #000000;
@@ -910,6 +985,16 @@ body {
   display: block;
   padding: 12px 10px;
   text-align: center;
+}
+
+.pagination-link-next:hover,
+.pagination-link-next:focus {
+  background-color: #f2f2f2;
+}
+
+.pagination-link-next:active {
+  color: #000000;
+  background-color: #e6e6e6;
 }
 
 /* Подвал */
@@ -1013,6 +1098,21 @@ body {
   width: 276px;
 }
 
+.button-search:hover,
+.button-search:focus {
+  background-color: #615048;
+}
+
+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.button-search:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
 .button-desired {
   text-align: center;
   font-family: PT Sans;
@@ -1027,6 +1127,20 @@ body {
   border: none;
   text-decoration: none;
   border-radius: 4px;
+}
+
+.button-desired:hover,
+.button-desired:focus {
+  background-color: #615048;
+}
+
+.button-desired:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-desired:disabled {
+  background-color: #e5e5e5;
 }
 
 .subscribe-button {
@@ -1047,6 +1161,20 @@ body {
   border: none;
 }
 
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:not(:disabled):active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+  background-color: #e5e5e5;
+}
+
 .catalog-submit {
   font-family: PT Sans;
   font-size: 16px;
@@ -1061,6 +1189,19 @@ body {
   border: 0;
 }
 
+.catalog-submit:hover,
+.catalog-submit:focus {
+  background-color: #68a2ca;
+}
+
+.catalog-submit:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-submit:disabled {
+  background-color: #e5e5e5;
+}
+
 .catalog-reset {
   font-family: PT Sans;
   font-size: 16px;
@@ -1072,6 +1213,24 @@ body {
   border: 0;
   color: #fff;
   background-color: rgba(131, 179, 211, 0);
+}
+
+.catalog-reset:not(:disabled):hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-reset:focus {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.catalog-reset:not(:disabled):active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-reset:disabled {
+  opacity: 10%;
 }
 
 /* Модальное окно */
