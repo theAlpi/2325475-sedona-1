@@ -186,7 +186,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   margin: 0;
-  padding: 112px 84px;
+  padding: 112px 85px;
   text-align: center;
   box-sizing: content-box;
   flex: flex;
@@ -273,6 +273,8 @@ body {
 }
 
 .description {
+  font-family: "PT Sans";
+  width: 230px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -298,6 +300,7 @@ body {
 }
 
 .advantages-heading {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -474,7 +477,7 @@ body {
 }
 
 .filter-label {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -532,7 +535,7 @@ body {
   width: 103px;
   margin: 0;
   padding: 12px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -546,7 +549,7 @@ body {
   width: 103px;
   margin: 0 2px;
   padding: 12px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -773,7 +776,7 @@ body {
 }
 
 .product-button {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-weight: 700;
   text-decoration: none;
   color: #fff;
@@ -802,7 +805,7 @@ body {
 }
 
 .product-button-favorite {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-weight: 700;
   text-decoration: none;
   color: #fff;
@@ -1115,7 +1118,7 @@ body {
 
 .button-desired {
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1145,7 +1148,7 @@ body {
 
 .subscribe-button {
   text-align: center;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1176,8 +1179,9 @@ body {
 }
 
 .catalog-submit {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
@@ -1203,8 +1207,9 @@ body {
 }
 
 .catalog-reset {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
@@ -1380,7 +1385,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   border: none;
   background-color: #f2f2f2;
