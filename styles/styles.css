@@ -21,28 +21,41 @@ html {
 }
 
 body {
-  width: 1200px;
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   flex-direction: column;
   display: flex;
-  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
+}
+
+.page-container {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  flex-direction: column;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Шапка */
 .navigation {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 70px;
   width: 1060px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   height: 100%;
+  overflow: hidden;
 }
 
 .logo-site {
@@ -54,7 +67,7 @@ body {
 .nav {
   justify-content: space-between;
   height: 64px;
-  margin-left: 168px;
+  padding-left: 168px;
   display: flex;
 }
 
@@ -141,7 +154,7 @@ body {
 
 /* Основное */
 .main-index {
-  flex-grow: 1;
+  background-color: #ffffff;
 }
 
 .hero {
@@ -297,6 +310,8 @@ body {
   display: block;
   object-fit: cover;
   background-color: #82b3d3;
+  max-width: 100%;
+  height: auto;
 }
 
 .advantages-heading {
@@ -590,6 +605,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+
+.catalog-main {
+  background-color: #ffffff;
 }
 
 .inner-search {
@@ -1004,6 +1023,7 @@ body {
 .main-footer {
   width: 1200px;
   padding: 40px 0 30px 0;
+  background-color: #ffffff;
 }
 
 .social-container {
@@ -1308,6 +1328,7 @@ body {
 .search-button {
   font-family: inherit;
   -webkit-user-select: none;
+  user-select: none;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -1481,7 +1502,6 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   color: #ffffff;
-  line-height: 20px;
   padding: 21px 18px 12px 22px;
   position: absolute;
   top: 40px;
