@@ -1047,30 +1047,63 @@ body {
 /* Подвал */
 .main-footer {
   width: 1200px;
-  padding: 40px 0 30px 0;
+  padding: 0;
   background-color: #ffffff;
 }
 
 .social-container {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap;
   height: 50px;
+  padding: 40px 70px 30px 70px;
+  margin: 0;
 }
 
 /* Иконки */
 .social-list {
-  margin: 0;
-  padding: 0 0 0 48px;
   display: flex;
-  justify-content: center;
+  min-height: 40px;
+  width: 144px;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-list img {
   width: 47px;
   height: 40px;
+}
+
+.social-item {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  width: 28px;
+  height: auto;
+}
+
+.footer-social {
+  fill: #83b3d3;
+}
+
+.footer-social:hover,
+.footer-social:focus {
+  fill: #68a2ca;
+}
+
+.footer-social:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contact-number {   /* Номер */
@@ -1101,8 +1134,18 @@ body {
 }
 
 /*Логотип html academy*/
-.footer-contact-logo {
-  padding: 0 47px 0 0;
+.contact-logo {
+  fill: #000000;
+  display: block;
+}
+
+.contact-logo:hover,
+.contact-logo:focus {
+  fill: #756157;
+}
+
+.contact-logo:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Цветные боксы */
