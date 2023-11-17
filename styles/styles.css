@@ -491,28 +491,28 @@ body {
 }
 
 .catalog-checked {
-  background-image: url(../images/icon/checkboxlike.svg);
+  background-image: url("../images/icon/checkboxlike.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: left 0 center;
 }
 
 .catalog-check {
-  background-image: url(../images/icon/checkbox.svg);
+  background-image: url("../images/icon/checkbox.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: left 0 center;
 }
 
 .catalog-radios {
-  background-image: url(../images/icon/radiolike.svg);
+  background-image: url("../images/icon/radiolike.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: left 0 center;
 }
 
 .catalog-radio {
-  background-image: url(../images/icon/radio.svg);
+  background-image: url("../images/icon/radio.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: left 0 center;
@@ -581,7 +581,7 @@ body {
   width: 103px;
   margin: 0;
   padding: 12px 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -596,7 +596,7 @@ body {
   width: 103px;
   margin: 0 2px;
   padding: 12px 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
