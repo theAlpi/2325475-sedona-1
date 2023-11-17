@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Гостиницы Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   </head>
 
   <body>
@@ -99,17 +101,20 @@
                     <input class="visually-hidden filter-input" id="apartments-radio" name="type-radio" type="radio" value="Apartments">
                     <span class="filter-label">Апартаменты</span>
                   </label>
-                </li>
               </ul>
             </fieldset>
 
             <fieldset class="catalog-filter-price">
               <legend class="catalog-filter-title">Стоимость, <span>₽:</span></legend>
                 <div class="catalog-inputs">
-                  <input class="catalog-min" type="text" name="max-sum" value="0">
-                  <input class="catalog-max" type="text" name="min-sum" value="9000">
-                  <span class="from-to">от</span>
-                  <span class="before-to">до</span>
+                  <label class="catalog-filter-label">
+                      <input class="catalog-min" type="text" name="max-sum" value="0">
+                      <span class="from-to">от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                      <input class="catalog-max" type="text" name="min-sum" value="9000">
+                      <span class="from-to">до</span>
+                  </label>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 226px;">
@@ -260,8 +265,10 @@
               <h2 class="header-block-two">Подпишитесь на рассылку</h2>
               <p class="description-block">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
               <form class="subscribe-form" action="#" method="post">
-              <input class="subscribe-field" type="email" placeholder="Ваш e-mail">
-                <button class="subscribe-button" type="submit">Подписаться</button>
+                <label class="subscribe-frm">
+                  <input class="subscribe-field" type="email" placeholder="Ваш e-mail">
+                  <button class="subscribe-button" type="submit">Подписаться</button>
+                </label>
               </form>
             </div>
           </section>

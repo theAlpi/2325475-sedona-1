@@ -258,6 +258,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  overflow: hidden;
 }
 
 .service-item {
@@ -274,6 +275,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  overflow: hidden;
 }
 
 .service-heading {
@@ -349,6 +351,7 @@ body {
   color: #ffffff;
   padding: 35px 70px 70px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .catalog-title {
@@ -359,6 +362,7 @@ body {
   line-height: 78px;
   margin: 0;
   margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 
 .catalog-navigation {
@@ -415,6 +419,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   height: 160px;
+  overflow: hidden;
 }
 
 .catalog-filter-checkbox {
@@ -544,6 +549,10 @@ body {
   top: -8px;
 }
 
+.catalog-filter-label {
+  position: relative;
+}
+
 .catalog-min {
   display: inline-block;
   border: none;
@@ -556,6 +565,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
 }
 
 .catalog-max {
@@ -570,28 +580,20 @@ body {
   font-weight: 700;
   line-height: 24px;
   border-radius: 0 4px 4px 0;
+  background-color: #F2F2F2;
 }
 
 .from-to {
-  position: relative;
-  right: 185px;
-  top: 13px;
-  color: #000000;
-  opacity: 30%;
-  line-height: 24px;
-}
-
-.before-to {
-  position: relative;
-  right: 59px;
-  top: 13px;
+  position: absolute;
+  left: 105px;
+  top: 12px;
   color: #000000;
   opacity: 30%;
   line-height: 24px;
 }
 
 .catalog-buttons {
-  margin: 0 0 0 31px;
+  margin: 0 0 0 auto;
   padding: 0;
   width: 191px;
   height: 104px;
@@ -746,6 +748,7 @@ body {
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
+  overflow: hidden;
 }
 
 .product-img {
@@ -924,14 +927,14 @@ body {
   line-height: 24px;
   color: #000000;
   padding: 12px 20px;
-  width: 452px;
+  width: 412px;
   max-height: 52px;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: none;
 }
 
-.subscribe-form {
+.subscribe-frm {
   display: flex;
   width: 684px;
 }
