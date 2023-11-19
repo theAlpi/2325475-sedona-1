@@ -43,7 +43,7 @@ body {
 }
 
 .main-container {
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 /* Шапка */
@@ -525,11 +525,13 @@ body {
 
 .filter-input[type="checkbox"]:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: -1px;
   border-radius: 4px;
 }
 
 .filter-input[type="radio"]:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: -1px;
   border-radius: 18px;
 }
 
