@@ -16,13 +16,12 @@
   font-display: swap;
 }
 
-html {
+html, body {
+  margin: 0;
   height: 100%;
 }
 
 body {
-  min-height: 100%;
-  margin: 0;
   flex-direction: column;
   display: flex;
   font-family: "PT Sans", sans-serif;
@@ -31,19 +30,17 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+  height: 100%;
 }
 
 .page-container {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
-  display: flex;
   margin: 0 auto;
   width: 1200px;
+  display: flex;
   flex-direction: column;
-}
-
-.main-container {
-  flex: 1 1 auto;
+  height: 100%;
 }
 
 /* Шапка */
@@ -54,12 +51,13 @@ body {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  height: 100%;
+  min-height: 64px;
+  max-height: 64px;
   overflow: hidden;
 }
 
 .logo-site {
-  max-width: 100%;
+  max-width: 140px;
   height: auto;
   position: absolute;
 }
@@ -69,6 +67,7 @@ body {
   height: 64px;
   padding-left: 168px;
   display: flex;
+  overflow: hidden;
 }
 
 .nav-list {
@@ -156,6 +155,8 @@ body {
 /* Основное */
 .main-index {
   background-color: #FFFFFF;
+  flex: 1 0 auto;
+  margin-top: 0;
 }
 
 .hero {
@@ -200,10 +201,13 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   margin: 0;
-  padding: 112px 85px;
+  width: 230px;
+  height: 179px;
+  padding: 103px 85px;
   text-align: center;
   box-sizing: content-box;
   flex: flex;
+  overflow: hidden;
 }
 
 .pictures {
@@ -211,6 +215,8 @@ body {
   background-color: #82B3D3;
   display: flex;
   padding: 0;
+  width: auto;
+  height: 385px;
 }
 
 .head-leg {
@@ -259,12 +265,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 385px;
   overflow: hidden;
 }
 
 .service-item {
   width: 400px;
-  height: 385px;
+  height: inherit;
   text-align: center;
   flex: 1;
 }
@@ -272,11 +279,13 @@ body {
 .service-block {
   text-align: center;
   padding: 80px 85px;
+  max-height: 223px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  overflow: hidden;
+  text-overflow: flip;
+  word-wrap: break-word;
 }
 
 .service-block::before {
@@ -347,8 +356,8 @@ body {
   text-transform: uppercase;
   margin: 0;
   position: relative;
-  margin-bottom: 30px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-heading::after {
@@ -427,15 +436,19 @@ body {
 }
 
 .catalog-navigation-link {
-  background-image: url("../images/icon/arrowright.svg");
-  background-repeat: no-repeat;
-  background-size: 11px 11px;
-  background-position: right 106px center;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   display: block;
-  padding: 0 26px;
+  padding: 0 10px 0 41px;
+}
+
+.catalog-navigation-arrow {
+  background-image: url("../images/icon/arrowright.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 19px;
+  background-position: left 23px center;
+  position: absolute;
 }
 
 .catalog-filter {
@@ -705,6 +718,8 @@ body {
 
 .catalog-main {
   background-color: #FFFFFF;
+  flex: 1 0 auto;
+  margin-top: 0;
 }
 
 .inner-search {
@@ -738,7 +753,7 @@ body {
   background-image: url("../images/icon/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 13px center;
-  padding-right: 20px;
+  padding-right: 30px;
   margin-left: auto;
 }
 
@@ -1121,6 +1136,8 @@ body {
   width: 1200px;
   padding: 0;
   background-color: #FFFFFF;
+  flex: 0 0 auto;
+  margin-top: auto;
 }
 
 .social-container {
@@ -1183,8 +1200,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  width: 331px;
-  padding: 0 194px;
+  padding: 0 auto;
+  white-space: nowrap;
 }
 
 .number-num {
@@ -1203,6 +1220,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  overflow: hidden;
 }
 
 /*Логотип html academy*/
@@ -1288,6 +1306,7 @@ body {
   color: #FFFFFF;
   padding: 8px 34px;
   border: none;
+  width: 160px;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -1446,9 +1465,11 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  width: 533px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 64px;
+  overflow: hidden;
 }
 
 .date-table {
@@ -1468,6 +1489,7 @@ body {
 .search-button {
   font-family: inherit;
   -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   cursor: pointer;
   border: none;
