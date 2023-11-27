@@ -116,6 +116,15 @@ body {
   padding: 20px 16px;
 }
 
+.nav-list-link:not(.current-link):hover,
+.nav-list-link:not(.current-link):focus {
+  background-color: #f2f2f2;
+}
+
+.nav-list-link:not(.current-link):active {
+  opacity: 60%;
+}
+
 .navigation-link-user {
   text-decoration: none;
   position: relative;
@@ -125,6 +134,15 @@ body {
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.navigation-link-user:hover,
+.navigation-link-user:focus {
+  background-color: #f2f2f2;
+}
+
+.navigation-link-user:active {
+  opacity: 60%;
 }
 
 .search-icon {
@@ -1235,6 +1253,15 @@ body {
   overflow: hidden;
 }
 
+.footer-number:hover,
+.footer-number:focus {
+  color: #756157;
+}
+
+.footer-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 /*Логотип html academy*/
 .contact-logo {
   fill: #000000;
@@ -1473,6 +1500,22 @@ body {
   right: 52px;
   top: 64px;
   padding: 0;
+}
+
+.modal-close-button:not(:disabled):hover,
+.modal-close-button:not(:disabled):focus {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:not(:disabled):active {
+  background-color: #e6e6e6;
+  background-image: url("../images/icon/close-active.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:disabled {
+  opacity: 20%;
 }
 
 .modal-title {
