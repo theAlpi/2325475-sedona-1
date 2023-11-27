@@ -1361,13 +1361,14 @@ body {
   background-color: #68A2CA;
 }
 
-.subscribe-button:not(:disabled):active {
+.subscribe-button:active {
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-button:disabled {
-  background-color: #E5E5E5;
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .catalog-submit {
@@ -1529,6 +1530,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.search-button:disabled {
+  opacity: 20%;
+}
+
 .calendar {
   width: 400px;
   padding: 12px 20px 12px 20px;
@@ -1549,7 +1554,11 @@ body {
 
 .calendar:hover,
 .calendar:focus {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
+}
+
+.calendar:disabled {
+  opacity: 20%;
 }
 
 .date-wrapper {
@@ -1623,6 +1632,10 @@ body {
 .more:active {
   fill: #756157;
   fill-opacity: 0.3;
+}
+
+.add-button:disabled {
+  opacity: 10%;
 }
 
 .button-wrapper {
