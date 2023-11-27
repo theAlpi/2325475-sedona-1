@@ -82,6 +82,7 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
+  max-width: 586px;
 }
 
 .current-link::after {
@@ -97,6 +98,7 @@ body {
 
 .navigation-item {
   position: relative;
+  white-space: nowrap;
 }
 
 .navigation-user {
@@ -133,7 +135,6 @@ body {
 .favourite-icon {
   background-image: url("../images/icon/heart.svg");
   display: block;
-  margin-right: 20px;
 }
 
 .favourite-number {
@@ -453,20 +454,19 @@ body {
 
 .catalog-filter {
   display: flex;
-  flex-wrap: wrap;
   height: 160px;
 }
 
 .catalog-filter-checkbox {
   border: none;
-  margin: 0 71px 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 71px 0 0;
 }
 
 .catalog-filter-radio {
   border: none;
-  margin: 0 151px 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 151px 0 0;
 }
 
 .catalog-filter-price {
@@ -480,11 +480,15 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-item {
   margin-bottom: 16px;
   height: 23px;
+  justify-content: space-between;
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -735,6 +739,8 @@ body {
   color: #000000;
   margin: 0;
   max-width: 350px;
+  margin-top: 7.5px;
+  margin-bottom: auto;
 }
 
 .select-control {
@@ -755,6 +761,7 @@ body {
   background-position: right 13px center;
   padding-right: 30px;
   margin-left: auto;
+  margin-bottom: auto;
 }
 
 .select-control:hover {
@@ -778,8 +785,13 @@ body {
   display: flex;
   gap: 8px;
   max-width: 160px;
-  min-height: 48px;
   margin-left: 70px;
+  flex-wrap: wrap;
+}
+
+.display-item {
+  height: 48px;
+  width: 48px;
 }
 
 .display-button {
@@ -1309,6 +1321,7 @@ body {
   width: 160px;
   text-decoration: none;
   border-radius: 4px;
+  margin-left: 20px;
 }
 
 .button-desired:hover,
