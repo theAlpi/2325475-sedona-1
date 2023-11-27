@@ -321,7 +321,7 @@ body {
 }
 
 .description {
-  font-family: "PT Sans";
+  font-family: inherit;
   width: 230px;
   font-weight: 400;
   font-size: 18px;
@@ -350,7 +350,7 @@ body {
 }
 
 .advantages-heading {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -919,7 +919,7 @@ body {
 }
 
 .product-button {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   text-decoration: none;
   color: #FFFFFF;
@@ -948,7 +948,7 @@ body {
 }
 
 .product-button-favorite {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   text-decoration: none;
   color: #FFFFFF;
@@ -1308,7 +1308,7 @@ body {
 
 .button-desired {
   text-align: center;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1340,7 +1340,7 @@ body {
 
 .subscribe-button {
   text-align: center;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1371,7 +1371,7 @@ body {
 }
 
 .catalog-submit {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1399,7 +1399,7 @@ body {
 }
 
 .catalog-reset {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1581,7 +1581,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-style: normal;
   border: none;
   background-color: #F2F2F2;
