@@ -80,9 +80,10 @@ body {
   text-decoration: none;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  max-width: 586px;
+  width: 400px;
 }
 
 .current-link::after {
@@ -396,7 +397,8 @@ body {
 .head-main {
   background-color: #82B3D3;
   background-image: url("../images/filtr.jpg");
-  background-size: cover;
+  background-size: coverh;
+  height: 307px;
   background-repeat: no-repeat;
   color: #FFFFFF;
   padding: 35px 70px 70px;
@@ -471,19 +473,24 @@ body {
 
 .catalog-filter {
   display: flex;
-  height: 160px;
 }
 
 .catalog-filter-checkbox {
   border: none;
   margin: 0;
-  padding: 0 71px 0 0;
+  padding: 0;
+  width: 220px;
 }
 
 .catalog-filter-radio {
   border: none;
+  padding: 0;
   margin: 0;
-  padding: 0 151px 0 0;
+  width: 291px;
+  max-width: 291px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 .catalog-filter-price {
@@ -499,13 +506,26 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  height: 157px;
+  width: 291px;
+  overflow: hidden;
+}
+.catalog-filter-list-checkbox {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 157px;
 }
 
 .catalog-filter-item {
+  display: flex;
   margin-bottom: 16px;
   height: 23px;
-  justify-content: space-between;
-  display: flex;
+  width: 140px;
 }
 
 .catalog-filter-title {
