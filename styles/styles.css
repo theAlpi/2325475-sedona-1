@@ -34,7 +34,6 @@ body {
 }
 
 .page-container {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
@@ -54,6 +53,7 @@ body {
   min-height: 64px;
   max-height: 64px;
   overflow: hidden;
+  box-shadow: 0 17px 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo-site {
@@ -177,6 +177,7 @@ body {
   background-color: #FFFFFF;
   flex: 1 0 auto;
   margin-top: 0;
+  box-shadow: 0 17px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -403,6 +404,7 @@ body {
   padding: 35px 70px 70px;
   margin-bottom: 50px;
   overflow: hidden;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-title {
@@ -769,7 +771,7 @@ body {
   background-color: #FFFFFF;
   flex: 1 0 auto;
   margin-top: 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 17px 15px rgba(0, 0, 0, 0.2);
 }
 
 .inner-search {
@@ -1214,7 +1216,7 @@ body {
   background-color: #FFFFFF;
   flex: 0 0 auto;
   margin-top: auto;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 17px 15px rgba(0, 0, 0, 0.2);
 }
 
 .social-container {
