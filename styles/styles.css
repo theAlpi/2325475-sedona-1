@@ -225,7 +225,6 @@ body {
   padding: 112.5px 85px;
   text-align: center;
   box-sizing: content-box;
-  flex: flex;
   overflow: hidden;
 }
 
@@ -397,7 +396,7 @@ body {
 .head-main {
   background-color: #82B3D3;
   background-image: url("../images/filtr.jpg");
-  background-size: coverh;
+  background-size: cover;
   height: 307px;
   background-repeat: no-repeat;
   color: #FFFFFF;
@@ -770,6 +769,7 @@ body {
   background-color: #FFFFFF;
   flex: 1 0 auto;
   margin-top: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .inner-search {
@@ -1214,6 +1214,7 @@ body {
   background-color: #FFFFFF;
   flex: 0 0 auto;
   margin-top: auto;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .social-container {
